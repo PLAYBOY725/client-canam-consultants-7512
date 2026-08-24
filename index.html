@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canam Consultants | Study Abroad & Visa Experts in Chandigarh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Outfit', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+    </style>
+</head>
+<body class="text-slate-900 antialiased bg-slate-50">
+
+    <!-- Top Urgency Bar -->
+    <div class="bg-blue-600 text-white text-xs md:text-sm py-2 px-4 text-center font-medium">
+        <span>Trusted by 10,000+ Students • 4.9★ Google Rating (120+ Reviews) • Sector 17-C, Chandigarh</span>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 bg-white/90 backdrop-blur-md z-50 border-b border-slate-100">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-2xl font-extrabold text-blue-600 tracking-tight italic">CANAM</div>
+            <nav class="hidden md:flex space-x-8 font-semibold text-slate-700">
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#why-us" class="hover:text-blue-600 transition">Why Us</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </nav>
+            <a href="#book" class="bg-slate-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-blue-600 transition duration-300 text-sm">Book Consultation</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 px-6">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="inline-flex items-center gap-2 bg-blue-500/20 text-blue-300 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+                    <span>★ 4.9 Google Rated</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">Your Future Abroad Starts in Chandigarh.</h1>
+                <p class="text-slate-300 text-lg mb-8 leading-relaxed">Expert guidance for study abroad visas, university admissions, and end-to-end relocation services. Trusted by students across India.</p>
+                <div class="flex gap-4">
+                    <a href="#book" class="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-xl font-bold transition">Get Started Today</a>
+                    <a href="https://wa.me/911725050666?text=Hello Canam Consultants, I want to inquire about your services." class="border border-slate-600 hover:bg-slate-800 px-8 py-4 rounded-xl font-bold transition">WhatsApp Us</a>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl text-slate-900 shadow-2xl">
+                <h3 class="text-2xl font-bold mb-6">Our Success Metric</h3>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                        <div class="text-3xl font-extrabold text-blue-600">98%</div>
+                        <div class="text-sm font-medium text-slate-500">Visa Success Rate</div>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                        <div class="text-3xl font-extrabold text-blue-600">120+</div>
+                        <div class="text-sm font-medium text-slate-500">Verified Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Bespoke Immigration Services</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                {[
+                    {t: "Signature Consultation", d: "Strategic roadmap for your academic profile."},
+                    {t: "Turnaround Package", d: "Fast-track documentation and processing."},
+                    {t: "Enterprise Care", d: "End-to-end relocation management."},
+                    {t: "VIP 24/7 Support", d: "Priority assistance whenever you need it."}
+                ].map(s => (
+                    <div class="p-8 border border-slate-200 rounded-3xl hover:shadow-xl transition">
+                        <h4 class="text-xl font-bold mb-4">{s.t}</h4>
+                        <p class="text-slate-600 mb-6">{s.d}</p>
+                        <a href="#book" class="text-blue-600 font-bold hover:underline">Inquire →</a>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="book" class="py-20 px-6 bg-slate-50">
+        <div class="container mx-auto max-w-2xl bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
+            <h2 class="text-3xl font-bold mb-8">Book Your Consultation</h2>
+            <div id="form-feedback" class="hidden mb-6 p-4 bg-green-50 text-green-700 rounded-xl font-medium">Thank you! Our consultant will reach out within 24 hours.</div>
+            <form id="contactForm" class="space-y-6">
+                <input type="text" placeholder="Full Name" required class="w-full p-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                <input type="email" placeholder="Email Address" required class="w-full p-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                <input type="tel" placeholder="Phone Number" required class="w-full p-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-6">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-3xl font-bold mb-10 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="faq-item border-b border-slate-200 pb-4">
+                    <button class="w-full text-left font-bold py-4 flex justify-between" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        What makes Canam unique? <span>+</span>
+                    </button>
+                    <div class="hidden text-slate-600 py-2">We combine decades of experience with personalized, data-backed strategies for every individual student.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 px-6 text-center">
+        <div class="container mx-auto">
+            <p class="mb-4">Sector 17-C, Chandigarh | Phone: +91 172 505 0666</p>
+            <p>&copy; 2023 Canam Consultants. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').onsubmit = function(e) {
+            e.preventDefault();
+            document.getElementById('form-feedback').classList.remove('hidden');
+            this.reset();
+        };
+    </script>
+</body>
+</html>
